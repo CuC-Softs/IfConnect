@@ -8,7 +8,6 @@ import { UserModule } from './user/user.module';
 import { MediaModule } from './media/media.module';
 import { ScheduleModule } from './schedule/schedule.module';
 import { PostModule } from './post/post.module';
-import { MediaResolver } from './media/media.resolver';
 
 @Module({
   imports: [
@@ -22,6 +21,6 @@ import { MediaResolver } from './media/media.resolver';
     ScheduleModule,
   ],
   controllers: [AppController],
-  providers: [AppService, MediaResolver],
+  providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }

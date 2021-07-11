@@ -12,7 +12,7 @@ import {
 import { Media } from 'src/media/entities/media.entity';
 
 @ObjectType()
-@Entity()
+@Entity('posts')
 export class Post {
   @PrimaryGeneratedColumn()
   id: number;

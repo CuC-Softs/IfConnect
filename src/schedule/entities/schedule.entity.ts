@@ -9,7 +9,7 @@ import {
 } from 'typeorm';
 
 @ObjectType()
-@Entity()
+@Entity('schedules')
 export class Schedule {
   @PrimaryGeneratedColumn()
   id: number;

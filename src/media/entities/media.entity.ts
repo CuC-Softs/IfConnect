@@ -9,7 +9,7 @@ import {
 } from 'typeorm';
 
 @ObjectType()
-@Entity()
+@Entity('media')
 export class Media {
   @PrimaryGeneratedColumn()
   id: number;
