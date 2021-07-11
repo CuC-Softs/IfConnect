@@ -2,7 +2,7 @@ import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
 export class createMedia1625673074964 implements MigrationInterface {
   private table = new Table({
-    name: 'users',
+    name: 'media',
     columns: [
       {
         name: 'id',
@@ -27,13 +27,15 @@ export class createMedia1625673074964 implements MigrationInterface {
       },
       {
         name: 'subtype',
-        type: 'string',
+        type: 'varchar',
+        length: '255',
         isUnique: false,
         isNullable: false,
       },
       {
         name: 'type',
-        type: 'string',
+        type: 'varchar',
+        length: '255',
         isUnique: true,
         isNullable: false,
       },
